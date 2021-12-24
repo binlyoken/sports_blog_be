@@ -2,7 +2,7 @@ import bcrypt
 from app import db
 from app.jwt import token_required
 from model.account import Account
-from flask_restful import Resource, marshal, reqparse, fields, marshal_with
+from flask_restful import Resource, reqparse, fields
 
 parser = reqparse.RequestParser()
 parser.add_argument('username', type=str, help='Username login to system')
